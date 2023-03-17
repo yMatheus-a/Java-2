@@ -1,0 +1,27 @@
+package aeso;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class aula {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o primeiro lado do triangulo ");
+        int n1 = sc.nextInt();
+        System.out.println("Digite o segundo lado do triangulo ");
+        int n2 = sc.nextInt();
+        System.out.println("Digite o terceiro lado do triangulo ");
+        int n3 = sc.nextInt();
+
+        if (n1 == n2 && n1 == n3){
+            System.out.println("é um triangulo equilátero");
+        } else if (n1 == n2 || n1 == n3){
+            System.out.println("é um triangulo escaleno");
+        } else {
+            System.out.println("é um triangulo isósceles");
+        }
+
+    }
+}
+
